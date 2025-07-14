@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top left, #fdfbfb, #ebedee),
+        url("https://www.transparenttextures.com/patterns/cubes.png");
+    background-blend-mode: overlay;
+    background-size: cover;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #222;
+}
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.back-button:hover {
+    color: #0056b3;
+}
+
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product-image {
+    flex: 1 1 500px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.02);
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.image-gallery img:hover {
+    border: 2px solid #007bff;
+}
+
+.product-info {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.product-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #555;
+}
+
+.product-price {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.discount {
+    color: #e91e63;
+    font-weight: bold;
+}
+
+.product-meta {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.product-meta span {
+    font-weight: 600;
+    color: #444;
+}
+
+.stars {
+    color: #ffc107;
+}
+
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column;
+    }
+
+    .product-title {
+        font-size: 24px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+}
