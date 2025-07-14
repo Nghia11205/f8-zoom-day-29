@@ -55,7 +55,6 @@ fetch("https://dummyjson.com/products")
             productStock.textContent = `Tồn kho: ${product.stock}`;
             footerCard.appendChild(productStock);
             productCard.appendChild(footerCard);
-
             //chuyển hướng đến trang chi tiết sản phẩm khi nhấp vào thẻ sản phẩm.
             productCard.addEventListener("click", () => {
                 window.location.href = `./detail.html?id=${product.id}`;
