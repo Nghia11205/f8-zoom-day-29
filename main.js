@@ -19,10 +19,18 @@ fetch("https://dummyjson.com/products")
             productDescription.textContent = product.description;
             productContent.appendChild(productDescription);
             productCard.appendChild(productContent);
+            const footerCard = document.createElement("div");
+            footerCard.classList.add("product-footer");
             const productPrice = document.createElement("span");
             productPrice.classList.add("price");
             productPrice.textContent = `$${product.price}`;
-            productCard.appendChild(productPrice);
+            footerCard.appendChild(productPrice);
+            const productStock = document.createElement("span");
+            productStock.classList.add("stock");
+            productStock.textContent = `Stock: ${product.stock}`;
+            footerCard.appendChild(productStock);
+            productCard.appendChild(footerCard);
+            console.log(footerCard);
 
             //chuyển hướng đến trang chi tiết sản phẩm khi nhấp vào thẻ sản phẩm.
             productCard.addEventListener("click", () => {
