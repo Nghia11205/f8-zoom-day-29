@@ -79,9 +79,9 @@ if (productId) {
             product.brand ? product.brand : "No brand"
         }</p>
         <p><span>Danh mục:</span> ${product.category}</p>
-        <p><span>Đánh giá:</span> <span class="stars">★</span> ${
+        <p><span>Đánh giá:</span>  ${
             product.rating
-        }</p>
+        }<span class="stars"><i class="fa-solid fa-star"></i></span></p>
         <p><span>Tồn kho:</span> ${
             product.stock > 0 ? `${product.stock} sản phẩm` : "Hết hàng"
         }</p>
